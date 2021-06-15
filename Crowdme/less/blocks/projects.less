@@ -1,0 +1,133 @@
+//main: ../style.less
+
+.projects {
+	
+	margin-top: 107px;
+	margin-bottom:80px;
+	padding-bottom: 50px;
+	background-color:#e2f8ff;
+	// height:305px;
+	&__col {
+		
+		display:flex;
+		
+		margin: 0px -60px;
+		@media (max-width: @md2) {
+			flex-wrap: wrap;
+		}
+		
+		
+	}
+	
+
+	&__inner {
+		flex:1 1 auto;
+		padding: 0px 60px;
+		@media (max-width: @md2) {
+			flex:1 1 100%;
+		}
+		
+		h3{
+			font-family: 'Open Sans', sans-serif;
+			font-size: 23px;
+			line-height: 1.4;
+			font-weight: 400;
+			color: #515151;
+			padding-top:40px;
+			padding-bottom:24px;
+			padding-left:177px;
+			@media (max-width: @md4) {
+				font-size: 19px;
+				padding-left:120px;
+			}
+		}
+		p{
+			font-family: 'Open Sans', sans-serif;
+			font-size: 17px;
+			line-height: 1.8;
+			font-weight: 400;
+			color: #515151;
+			padding-left:177px;
+			@media (max-width: @md4) {
+				font-size: 14px;
+				padding-left:120px;
+			}
+		}
+		&:first-child{
+			background:url("../images/projects/img1.png")60px 50% no-repeat;
+			@media (max-width: @md4) {
+				background-size: 80px 80px
+			}
+		}
+		&:last-child{
+			background:url("../images/projects/img2.png")60px 50% no-repeat;
+			@media (max-width: @md4) {
+				background-size: 80px 80px
+			}
+		}
+	}
+	&__btn-blue{
+		font-family: 'Open Sans', sans-serif;
+			font-size: 15px;
+			display:inline-block;
+			line-height: 1.2;
+			font-weight: 600;
+			color: #ffffff;
+			padding: 19px 22px;
+			
+			border-radius: 8px;
+			margin-left:177px;
+			margin-top: 20px;
+			background-color: #26a6d1;
+			transition: all 0.15s ease;
+			
+			&:hover{
+			background-color: darken(#26a6d1,5%) ;
+				
+			
+		}
+			&:active{
+				box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+			}
+			@media (max-width: @md4) {
+				font-size: 12px;
+				padding: 13px 18px;
+				margin-left:120px;
+			}
+
+	}
+	&__btn-green{
+		font-family: 'Open Sans', sans-serif;
+			font-size: 15px;
+			display:inline-block;
+			line-height: 1.2;
+			font-weight: 600;
+			color: #ffffff;
+			padding: 19px 22px;
+			
+			border-radius: 8px;
+			margin-left:177px;
+			margin-top: 20px;
+			transition: all 0.15s ease;
+			background-color: #add136;
+			&:hover{
+			background-color: darken(#add136,5%) ;
+				
+			
+		}
+			&:active{
+				box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+			}
+			@media (max-width: @md4) {
+				font-size: 12px;
+				padding: 13px 18px;
+				margin-left:120px;
+			}
+
+	}
+
+	
+
+}
+
+ 

@@ -1,0 +1,46 @@
+//out: ../css/style.css, compress: false, sourceMap: false
+@import "vars";
+@import "fonts";
+@import "nullstyle";
+
+
+
+body{
+	font-size: 17px;
+	@media (max-width: @md3) {
+		&.lock{
+			overflow: hidden;
+		}
+	}
+}
+
+.container {
+	max-width: 1060px;
+	margin: 0 auto;
+	padding: 0 15px;
+	width: 100%;
+
+	&.small{
+
+	}
+}
+
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	// position: relative;
+}
+
+
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/work";
+@import "blocks/projects";
+@import "blocks/info";
+@import "blocks/cards";
+@import "blocks/community";
+@import "blocks/footer";

@@ -1,0 +1,294 @@
+//main: ../style.less
+
+.work {
+	margin-top: 100px;
+	
+	@media (max-width: @md3) {
+		margin-top: 60px;
+	}
+	&__inner {
+	padding: 0 55px;
+	text-align: center;
+	@media (max-width: @md3) {
+		padding: 0 15px;
+	}
+		h2{
+			
+			font-size: 31px;
+			line-height: 1.61;
+			font-weight: 600;
+			text-transform: uppercase;
+			color: #515151;
+			margin-bottom: 70px;
+			@media (max-width: @md2) {
+				font-size: 26px;
+			}
+			@media (max-width: @md3) {
+				font-size: 20px;
+				margin-bottom: 40px;
+			}
+		}
+		p{
+			opacity: 0.7;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 19px;
+			line-height: 1.7;
+			font-weight: 400;
+			color: #515151;
+			margin-bottom: 30px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+			@media (max-width: @md2) {
+				font-size: 17px;
+			}
+			@media (max-width: @md3) {
+				font-size: 14px;
+			}
+		}
+	}
+
+	&__logo {
+		text-align: center;
+		width:100%;
+		margin-bottom: 52px;
+		@media (max-width: @md3) {
+			margin-bottom: 20px;
+		}
+	}
+
+	
+
+	&__tab-content {
+		text-align: left;
+		display:none;
+		h2{
+			font-family: 'Open Sans', sans-serif;
+			font-size: 25px;
+			line-height: 1.2;
+			font-weight: 400;
+			color: #add136;
+			margin-bottom: 34px;
+			padding-left: 218px;
+			@media (max-width: @md2) {
+				font-size: 21px;
+				padding-left: 180px;
+			}
+			@media (max-width: @md3) {
+				font-size: 18px;
+				padding-left: 120px;
+			}
+			@media (max-width: @md4) {
+				margin-bottom: 20px;
+			}
+		}
+		p{
+			opacity: 0.67;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 17px;
+			line-height: 1.8;
+			font-weight: 400;
+			color: #606060;
+			padding-left: 218px;
+			@media (max-width: @md2) {
+				font-size: 15px;
+				padding-left: 180px;
+			}
+			@media (max-width: @md3) {
+				font-size: 13px;
+				padding-left: 120px;
+			}
+		}
+		&:nth-child(1){
+			background: url('../images/work/glasses.png') 0 50% no-repeat;
+			@media (max-width: @md3) {
+				background-size: 80px 80px;
+			}
+			
+		}
+		&:nth-child(2){
+			background: url('../images/work/glasses.png') 0 50% no-repeat;
+			@media (max-width: @md3) {
+				background-size: 80px 80px;
+			}
+		}
+		&:nth-child(3){
+			background: url('../images/work/glasses.png') 0 50% no-repeat;
+			@media (max-width: @md3) {
+				background-size: 80px 80px;
+			}
+		}
+		
+	}
+	&__tab-block{
+		margin-top: 100px;
+		padding: 0px 80px;
+		@media (max-width: @md2) {
+			margin-top: 60px;
+			padding: 0px 40px;
+		}
+		@media (max-width: @md3) {
+			
+			padding: 0px 15px;
+		}
+		@media (max-width: @md4) {
+			
+			padding: 0px;
+		}
+	}
+}
+
+
+.faded{
+	opacity:0;	 
+	transition: all 0.2s ease;
+}
+
+.faded.in{
+	opacity:1;	 
+	transition: all 0.2s ease;
+}
+
+.actived{
+	display: block;
+}
+
+.work__block{
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+	flex-wrap:wrap;
+	margin-top: 156px;
+	padding: 0 10px;
+	@media (max-width: @md2) {
+		margin-top: 90px;
+	}
+	@media (max-width: @md3) {
+		margin-top: 80px;
+	}
+}
+
+.form-group{
+	
+	// flex: 1 1 33.333%;
+	position: relative;
+	// margin-right: 110px;
+	&:last-child{
+		margin-right: 0;
+	}
+	@media (max-width: @md3) {
+		margin-right: 50px;
+		flex: 1 1 100%;
+		margin-bottom: 50px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
+.real-radio-btn {
+	/* Скрываем реальную радио кнопку*/
+	width: 0;
+	height: 0;
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+ }
+ 
+ /* *********************************
+ Фейковая радиокнопка
+ ********************************* */
+ 
+
+
+
+ .custom-radio-btn {
+	position: relative;
+	display: inline-block;
+	width: 43px;
+	height: 43px;
+	background: #5f5f5f;
+	
+	border-radius: 50%;
+	vertical-align: text-top;
+	margin-right: 33px;
+	@media (max-width: 890px) {
+		margin-right: 20px;
+		margin-bottom: 10px;
+	}
+ }
+ 
+ .custom-radio-btn::before {
+	content: "";
+ 
+	/* Рисуем внешний круг */
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	background: #add136;
+	
+	border-radius: 50%;
+ 
+	/* Выравниваем по центру */
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) scale(0);
+ 
+	transition: 0.2s ease-in;
+ }
+ 
+
+ .custom-radio-btn::after{
+	 
+	 position: absolute;
+	 color:white;
+	 top: 50%;
+	 left: 15px;
+	 transform: translateY(-50%);
+	 
+ }
+
+ .custom-radio-btn1::after{
+	 content:"1";
+	font-size: 20px;
+}
+.custom-radio-btn2::after{
+	content:"2";
+	font-size: 20px;
+}
+.custom-radio-btn3::after{
+	content:"3";
+	font-size: 20px;
+}
+
+ /* *********************************
+ Магия переключения фейковой кнопки
+ ********************************* */
+ .real-radio-btn:checked + .custom-radio-btn::before {
+	transform: translate(-50%, -50%) scale(1);
+ }
+ 
+ /* Подсветка для радиокнопке в фокусе */
+ .real-radio-btn:focus + .custom-radio-btn {
+	box-shadow: 0px 0px 0px 1px #a3a4a7, 0px 0px 10px #7e9bbd;
+ }
+
+ .form-group-text{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 33px;
+	line-height: 1.2;
+	font-weight: 300;
+	color: #656565;
+	vertical-align: top;
+	@media (max-width: @md2) {
+		font-size: 25px;
+	}
+	@media (max-width: @md3) {
+		font-size: 20px;
+	}
+ }
+
+
+
+
