@@ -1,0 +1,137 @@
+//main: ../style.less
+
+.pricing {
+	
+	padding-top: 68px;
+	
+	background:url('../images/prices/bg_1.jpg')bottom left /cover no-repeat;;
+	
+
+	&__card-img{
+		height: 80px;
+		width: 80px;
+		display: inline-block;
+		margin-bottom: 45px;
+	}
+
+	&__content {
+		padding: 0 44px;
+		margin-top: 120px;
+		margin-bottom: 150px;
+		@media (max-width: @md2) {
+			margin-top: 80px;
+		margin-bottom: 90px;
+		}
+		@media (max-width: @md3) {
+			margin-top: 60px;
+		margin-bottom: 70px;
+		}
+	}
+
+	
+	&__inner {
+		
+		display: flex;
+		flex-wrap: wrap;
+		// margin: 0 -21px;
+
+		
+	}
+
+	&__card {
+		padding: 47px 0;
+		background: url('../images/prices/bg_card_little.png')top  no-repeat;
+		flex: 0 1 33.333%;
+		text-align: center;
+
+		
+		transition: transform 0.9s ease;
+		
+		// padding: 0px 21px;
+		&:hover{
+			transform: translateY(-20px);
+			
+		}
+		@media (max-width: @md1) {
+			
+			flex: 1 1 50%;
+			margin-bottom: 40px;
+			&:last-child{
+				margin-bottom: 0px;
+			}
+		}
+		@media (max-width: 860px) {
+			flex: 1 1 100%;
+		}
+	}
+
+	&__card-name {
+		font-family: 'Raleway', sans-serif;
+		font-size: 16px;
+		line-height: 1.2;
+		font-weight: 700;
+		color: #494949;
+		margin-bottom: 10px;
+	}
+
+	&__card-price {
+		
+		font-family: 'Raleway', sans-serif;
+		font-size: 72px;
+		line-height: 1;
+		font-weight: 800;
+		color: #2eb0ec;
+		margin-bottom: 45px;
+		span{
+			background-image: linear-gradient(34.0deg, #6af4f9 -11%, #2eb0ec 111%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			position: relative;
+			&:before{
+				content:"";
+				display: inline-block;
+				font-size: 12px;
+				width: 12px;
+				height: 19px;
+				position: absolute;
+				background-image: url("../images/prices/money.png");
+				top: 25px;
+    			left: -14px;
+
+			}
+			&:after{
+				content:"";
+				display: inline-block;
+				font-size: 12px;
+				width: 42px;
+				height: 15px;
+				position: absolute;
+				background-image: url("../images/prices/_mo_13181.png");
+				bottom: 12px;
+   			right: -41px;
+			}
+		}
+	}
+
+	&__card-text {
+		margin-bottom: 35px;
+		li{
+		margin-bottom: 5px;	
+		font-family: 'Raleway', sans-serif;
+		font-size: 14px;
+		line-height: 32px;
+		font-weight: 500;
+		color: #7c7c7c;
+			&:last-child{
+				margin-bottom: 0;
+			}
+
+		}
+	}
+
+	&__btn{
+		padding: 20px 43px;
+		display: inline-block;
+		
+	}
+}

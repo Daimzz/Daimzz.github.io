@@ -1,0 +1,155 @@
+//main: ../style.less
+
+.devices {
+	padding-top: 135px;
+	
+	height: 936px;
+	background-color: lightblue;
+	background: url('../images/devices/devices__bg.jpg')0 0 /cover no-repeat;
+	
+	
+		
+	
+	&__content{
+		margin-top: 260px;
+		max-width:510px;
+		@media (max-width: @md1) {
+			margin-left: 80px;
+		}
+		@media (max-width: @md2) {
+			margin-top: 220px;
+			margin-left: 40px;
+			
+
+		}
+		@media (max-width: @md3) {
+			margin: 210px 20px 0px 20px;
+			text-align: center;
+			max-width:100%;
+			
+
+		}
+		@media (max-width: @md4) {
+			margin-top: 190px;
+			margin-left: 20px;
+			
+
+		}
+		
+	}
+	
+	&__title {
+		
+		margin-bottom: 44px;
+		@media (max-width: @md2) {
+			
+			margin-bottom: 30px;	
+		}
+		
+		span{
+			display:inline-block;
+			
+			margin-right: 22px;
+			font-family: 'Museo Slab', sans-serif;
+			font-size: 40px;
+			line-height: 28px;
+			font-weight: 500;
+			text-transform: uppercase;
+			color: #fffefe;
+			&:last-child{
+				margin-right: 0;
+			}
+			@media (max-width: @md2) {
+				font-size: 36px;
+				margin-bottom: 30px;	
+			}
+			@media (max-width: @md3) {
+				font-size: 30px;
+				margin-bottom: 28px;	
+			}
+			
+		}
+	}
+
+	&__text {
+
+		font-family: 'Raleway', sans-serif;
+		font-size: 26px;
+		line-height: 1.54;
+		font-weight: 500;
+		color: #fefefe;
+		
+		@media (max-width: @md2) {
+			font-size: 20px;
+			
+		}
+
+	}
+	&__buttons{
+		display:inline-flex;
+		margin-top: 70px;
+		@media (max-width: @md3) {
+			flex-direction: column;
+			
+			
+		}
+			&-google {
+				
+				border-radius:15px;
+				background-color: #fff;
+				margin-right: 30px;
+				@media (max-width: @md2) {
+					margin-bottom: 26px;
+					
+			
+				}
+
+				span{
+					font-family: 'Raleway', sans-serif;
+					font-size: 20px;
+					line-height: 40px;
+					font-weight: 600;
+					color: #3e3e3e;
+					display:flex;
+					align-items: center;
+					padding: 30px 32px;
+					height:80px;
+					width: 240px;
+					&::before{
+						content:'';
+						width: 30px;
+						display:inline-block;
+						margin-right: 20px;
+						height: 32px;
+						
+						background-image: url("../images/devices/google-play.png");
+						
+					}
+				}
+
+				&:hover{
+					box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+				}
+			}
+
+			&-more {
+				border-radius:15px;
+				font-family: 'Raleway', sans-serif;
+				font-size: 20px;
+				line-height: 40px;
+				font-weight: 600;
+				color: #ffffff;
+				background-color: rgba(4,92,243,0.32);
+				height:80px;
+				width: 240px;
+				display:flex;
+				align-items: center;
+				justify-content: center;
+				&:hover{
+					box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+				}
+
+		}
+	}
+
+}
