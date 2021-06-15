@@ -148,25 +148,24 @@
 				display:block;
 				text-align: center;
 			}
-			&:after{
+			
+			&:first-child{
+				&:after{
 				
-			content:"|";
-			padding: 0px 17px;
-			display: inline-block;
-			font-weight: 100;
-			font-size: 24px;
-			vertical-align: middle;
-			margin-left: 6px;
-			@media (max-width: @md4) {
-				display:none;
+					content:"|";
+					padding: 0px 17px;
+					display: inline-block;
+					font-weight: 100;
+					font-size: 24px;
+					vertical-align: middle;
+					margin-left: 6px;
+					@media (max-width: @md4) {
+						display:none;
+					}
+		
+				}
 			}
-
-		}
-		&:last-child{
-			&:after{
-				display: none;
-			}
-		}
+	
 		
 	
 		

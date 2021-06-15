@@ -1487,7 +1487,7 @@ h6 {
     text-align: center;
   }
 }
-.footer__copyright span:after {
+.footer__copyright span:first-child:after {
   content: "|";
   padding: 0px 17px;
   display: inline-block;
@@ -1497,10 +1497,7 @@ h6 {
   margin-left: 6px;
 }
 @media (max-width: 479.98px) {
-  .footer__copyright span:after {
+  .footer__copyright span:first-child:after {
     display: none;
   }
-}
-.footer__copyright span:last-child:after {
-  display: none;
 }
