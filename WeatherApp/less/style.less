@@ -1,0 +1,49 @@
+//out: ../css/style.css, compress: false, sourceMap: false
+@import "vars";
+@import "fonts";
+@import "nullstyle";
+
+body{
+	
+	@media (max-width: @md3) {
+		&.lock{
+			overflow: hidden;
+		}
+	}
+	
+}
+
+body{
+	font-size: 18px;
+}
+
+.container {
+	max-width: 990px;
+	margin: 0 auto;
+	padding: 0 15px;
+	width: 100%;
+
+	&.small{
+
+	}
+}
+
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/features";
+@import "blocks/widgets";
+@import "blocks/screenshots";
+@import "blocks/reviews";
+@import "blocks/download";
+@import "blocks/footer";

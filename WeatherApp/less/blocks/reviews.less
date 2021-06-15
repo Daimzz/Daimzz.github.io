@@ -1,0 +1,69 @@
+//main: ../style.less
+
+
+.reviews {
+
+	&__title-block {
+		margin-top: 100px;
+		margin-bottom: 140px;
+	}
+
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+		margin:0px -27px;
+	}
+
+	&__item {
+		flex: 1 1 50%;
+		margin-bottom: 170px;
+		padding:0px 27px;
+		position: relative;
+		&:before{
+			content: open-quote;
+			font-size: 128px;
+			position: absolute;
+			top:-60px;
+			left:20px;
+			color:#648cff;
+			@media (max-width: @md3) {
+				font-size: 90px;
+			}
+
+		}
+		&:after{
+			content: close-quote;
+			font-size: 128px;
+			position: absolute;
+			bottom:-100%;
+			right:38px;
+			color:#648cff;
+			@media (max-width: @md3) {
+				font-size: 90px;
+				bottom:-85%;
+			}
+		}
+		@media (max-width: @md3) {
+			flex: 1 1 100%;
+
+		}
+	}
+
+	&__comment {
+		margin-bottom: 24px;
+		font-family: @fontFamily;
+		font-size: 24px;
+		line-height: 1.5;
+		font-weight: 400;
+		color: #353854;
+	}
+
+	&__author {
+		font-family: @fontFamily;
+		font-size: 18px;
+		line-height: 1.2;
+		font-weight: 400;
+		color: #353854;
+			}
+}
+
