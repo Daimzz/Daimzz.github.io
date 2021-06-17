@@ -151,6 +151,18 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 767.98px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+}
+.header.fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
 .header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -518,11 +530,11 @@ body {
   }
 }
 .work {
-  margin-top: 100px;
+  padding-top: 100px;
 }
 @media (max-width: 767.98px) {
   .work {
-    margin-top: 60px;
+    padding-top: 60px;
   }
 }
 .work__inner {
